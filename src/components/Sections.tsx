@@ -69,12 +69,12 @@ export function Tools() {
               </div>
             </div>
             <p className="body tool__desc">
-              Read your script at the lens while your camera records. It scrolls at the words per minute you choose, mirrors for teleprompter glass, and records takes in your browser, so they never leave your device.
+              Read your script at the lens while your camera records. Practise free with your camera and script, then record takes in your browser for a small monthly fee. Takes never leave your device.
             </p>
             <ul className="tool__facts mono">
-              <li>Live camera</li>
+              <li>Practise free</li>
               <li>Records in browser</li>
-              <li>Free</li>
+              <li>₦3,000 / month</li>
             </ul>
             <ButtonLink href={PRODUCTS.eyeline} variant="ink" external>Open Eyeline</ButtonLink>
           </motion.li>
@@ -136,7 +136,7 @@ export function Tools() {
 const principles = [
   { k: "01", t: "One job, done properly", b: "Each tool solves a single everyday task from start to finish. No dashboards to learn, no settings to tune." },
   { k: "02", t: "Private by default", b: "We keep as little of your data as the job allows. HazardSign signs your documents and Eyeline records your takes without either ever leaving your device." },
-  { k: "03", t: "Fair, local pricing", b: "Free where we can, and simple monthly prices in naira where a tool costs to run, paid securely by card. Cancel whenever you like." },
+  { k: "03", t: "Fair, local pricing", b: "Simple monthly prices in naira, paid securely by card. Cancel whenever you like." },
   { k: "04", t: "Shipped, then sharpened", b: "Tools go out when they're useful, then improve every week based on how people actually use them." },
 ];
 

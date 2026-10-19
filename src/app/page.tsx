@@ -30,7 +30,7 @@ const jsonLd = {
       url: "https://eyeline.hazardsecurity.xyz/",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Web browser",
-      offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
+      offers: { "@type": "Offer", price: "3000", priceCurrency: "NGN" },
       publisher: { "@id": "https://hazardsecurity.xyz/#org" },
     },
   ],
