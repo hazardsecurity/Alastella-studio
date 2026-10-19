@@ -56,5 +56,6 @@ export function ButtonLink({ href, children, variant = "ink", external = false }
 export const PRODUCTS = {
   hazardsign: "https://sign.hazardsecurity.xyz",
   eyeline: "https://eyeline.hazardsecurity.xyz",
+  eyelineFloat: "https://eyeline.hazardsecurity.xyz/download",
 };
 export const GITHUB = "https://github.com/hazardsecurity";

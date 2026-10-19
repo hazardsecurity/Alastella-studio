@@ -79,8 +79,32 @@ export function Tools() {
             <ButtonLink href={PRODUCTS.eyeline} variant="ink" external>Open Eyeline</ButtonLink>
           </motion.li>
 
-          {/* 03 — honest placeholder */}
-          {["03"].map((n) => (
+          {/* 03 — live */}
+          <motion.li className="tool tool--eye tool--float" variants={card} transition={{ duration: 1, ease: EASE }}>
+            <div className="tool__top">
+              <span className="mono tool__no">03</span>
+              <span className="tool__status mono"><i />Live</span>
+            </div>
+            <div className="tool__brand">
+              <Image src="/eyeline-float-mark.svg" alt="" width={72} height={72} unoptimized />
+              <div>
+                <h3 className="h3">Eyeline Float</h3>
+                <p className="mono tool__kind">Desktop teleprompter</p>
+              </div>
+            </div>
+            <p className="body tool__desc">
+              Read your script on a video call without anyone seeing it. A thin strip sits under your webcam on Mac or Windows, scrolls at your pace, and stays out of screen sharing on Zoom, Meet and Teams.
+            </p>
+            <ul className="tool__facts mono">
+              <li>Mac and Windows</li>
+              <li>Hidden from screen share</li>
+              <li>₦5,000 / month</li>
+            </ul>
+            <ButtonLink href={PRODUCTS.eyelineFloat} variant="ink" external>Download Eyeline Float</ButtonLink>
+          </motion.li>
+
+          {/* 04 — honest placeholder */}
+          {["04"].map((n) => (
             <motion.li key={n} className="tool tool--soon" variants={card} transition={{ duration: 1, ease: EASE }}>
               <div className="tool__top">
                 <span className="mono tool__no">{n}</span>
@@ -96,7 +120,7 @@ export function Tools() {
 
       <style>{`
         .tools__head { display: grid; gap: 1.75em; max-width: 46em; margin-bottom: 4.5em; }
-        .shelf { list-style: none; display: grid; grid-template-columns: 1.2fr 1.2fr 0.85fr; gap: 1.25em; align-items: stretch; }
+        .shelf { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25em; align-items: stretch; }
         .tool { position: relative; display: flex; flex-direction: column; gap: 1.4em; padding: 2em; border-radius: 1.5em; background: #faf9f5;
           box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 8%, transparent); transition: transform .5s var(--ease), box-shadow .5s var(--ease); }
         @media (hover: hover) and (pointer: fine) {
@@ -119,13 +143,13 @@ export function Tools() {
         .tool__facts { list-style: none; display: flex; flex-wrap: wrap; gap: .5em; font-size: .72em; margin-top: auto; }
         .tool__facts li { padding: .45em .8em; border-radius: 99px; background: var(--bone-2); color: var(--ink-2); }
         .tool--sign .btn, .tool--eye .btn { align-self: flex-start; }
-        .tool--soon { background: transparent; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ink) 14%, transparent); }
+        .tool--soon { grid-column: 1 / -1; background: transparent; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ink) 14%, transparent); }
         .tool__tape { position: relative; height: 7.5em; border-radius: 1em; overflow: hidden; display: grid; place-items: center;
           background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--ink) 7%, transparent) 0 .9em, transparent .9em 1.8em); }
         .tool__tape span { font-family: var(--f-mono); font-size: .7em; letter-spacing: .16em; background: var(--tape); padding: .5em 1em; transform: rotate(-3deg); }
         .tool__link { font-size: .78em; color: var(--ink-2); margin-top: auto; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--tape-2); }
         .tool__link:hover { color: var(--ink); }
-        @media (max-width: 1023px) { .shelf { grid-template-columns: 1fr 1fr; } .tool--soon { grid-column: 1 / -1; } }
+        @media (max-width: 1023px) { .shelf { grid-template-columns: 1fr 1fr; } }
         @media (max-width: 600px) { .shelf { grid-template-columns: 1fr; } .tool { padding: 1.5em; } }
       `}</style>
     </section>
@@ -197,6 +221,7 @@ export function Closing() {
             <a href="#principles">How we build</a>
             <a href={PRODUCTS.hazardsign} target="_blank" rel="noreferrer">HazardSign AI</a>
             <a href={PRODUCTS.eyeline} target="_blank" rel="noreferrer">Eyeline</a>
+            <a href={PRODUCTS.eyelineFloat} target="_blank" rel="noreferrer">Eyeline Float</a>
             <a href={GITHUB} target="_blank" rel="noreferrer">GitHub</a>
           </nav>
           <span className="mono foot__c">© 2026 Hazardsecurity</span>

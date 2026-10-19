@@ -33,6 +33,15 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "3000", priceCurrency: "NGN" },
       publisher: { "@id": "https://hazardsecurity.xyz/#org" },
     },
+    {
+      "@type": "SoftwareApplication",
+      name: "Eyeline Float",
+      url: "https://eyeline.hazardsecurity.xyz/download",
+      applicationCategory: "MultimediaApplication",
+      operatingSystem: "macOS, Windows",
+      offers: { "@type": "Offer", price: "5000", priceCurrency: "NGN" },
+      publisher: { "@id": "https://hazardsecurity.xyz/#org" },
+    },
   ],
 };
 
