@@ -7,14 +7,15 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://hazardsecurity.xyz/#org",
+      "@id": "https://www.hazardsecurity.xyz/#org",
       name: "Hazardsecurity",
-      url: "https://hazardsecurity.xyz",
-      logo: "https://hazardsecurity.xyz/icon.svg",
+      alternateName: ["Hazard Security", "hazardsecurity.xyz"],
+      url: "https://www.hazardsecurity.xyz",
+      logo: "https://www.hazardsecurity.xyz/icon.svg",
       description: "An independent software studio building focused tools for everyday jobs.",
       sameAs: ["https://github.com/hazardsecurity"],
     },
-    { "@type": "WebSite", "@id": "https://hazardsecurity.xyz/#site", url: "https://hazardsecurity.xyz", name: "Hazardsecurity", publisher: { "@id": "https://hazardsecurity.xyz/#org" } },
+    { "@type": "WebSite", "@id": "https://www.hazardsecurity.xyz/#site", url: "https://www.hazardsecurity.xyz", name: "Hazardsecurity", alternateName: "Hazard Security", publisher: { "@id": "https://www.hazardsecurity.xyz/#org" } },
     {
       "@type": "SoftwareApplication",
       name: "HazardSign AI",
@@ -22,7 +23,7 @@ const jsonLd = {
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web browser",
       offers: { "@type": "Offer", price: "500", priceCurrency: "NGN" },
-      publisher: { "@id": "https://hazardsecurity.xyz/#org" },
+      publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
     },
     {
       "@type": "SoftwareApplication",
@@ -31,7 +32,7 @@ const jsonLd = {
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Web browser",
       offers: { "@type": "Offer", price: "3000", priceCurrency: "NGN" },
-      publisher: { "@id": "https://hazardsecurity.xyz/#org" },
+      publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
     },
     {
       "@type": "SoftwareApplication",
@@ -40,7 +41,7 @@ const jsonLd = {
       applicationCategory: "MultimediaApplication",
       operatingSystem: "macOS, Windows",
       offers: { "@type": "Offer", price: "5000", priceCurrency: "NGN" },
-      publisher: { "@id": "https://hazardsecurity.xyz/#org" },
+      publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
     },
   ],
 };

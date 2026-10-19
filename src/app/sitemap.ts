@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: "https://hazardsecurity.xyz/", lastModified: new Date(), changeFrequency: "weekly", priority: 1 }];
+  return [{ url: "https://www.hazardsecurity.xyz/", lastModified: new Date(), changeFrequency: "weekly", priority: 1 }];
 }
