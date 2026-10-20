@@ -103,18 +103,28 @@ export function Tools() {
             <ButtonLink href={PRODUCTS.eyelineFloat} variant="ink" external>Download Eyeline Float</ButtonLink>
           </motion.li>
 
-          {/* 04 — honest placeholder */}
-          {["04"].map((n) => (
-            <motion.li key={n} className="tool tool--soon" variants={card} transition={{ duration: 1, ease: EASE }}>
-              <div className="tool__top">
-                <span className="mono tool__no">{n}</span>
-                <span className="tool__status tool__status--soon mono"><i />In the workshop</span>
+          {/* 04 — in the workshop */}
+          <motion.li className="tool tool--soon tool--volt" variants={card} transition={{ duration: 1, ease: EASE }}>
+            <div className="tool__top">
+              <span className="mono tool__no">04</span>
+              <span className="tool__status tool__status--soon mono"><i />In the workshop</span>
+            </div>
+            <div className="tool__brand">
+              <Image src="/voltguard-mark.svg" alt="" width={72} height={72} unoptimized />
+              <div>
+                <h3 className="h3">VoltGuard AI</h3>
+                <p className="mono tool__kind">Revenue protection for DisCos</p>
               </div>
-              <div className="tool__tape" aria-hidden><span>UNDER CONSTRUCTION</span></div>
-              <p className="body tool__desc">The next everyday tool is being built. It ships when it does its one job properly.</p>
-              <a className="tool__link mono" href={GITHUB} target="_blank" rel="noreferrer">Follow along on GitHub →</a>
-            </motion.li>
-          ))}
+            </div>
+            <p className="body tool__desc">
+              Finds electricity theft for distribution companies. It checks the energy each feeder sends out against what its meters record, scores every meter for bypass and tampering, and sends inspectors to the right door with a GPS-tagged docket.
+            </p>
+            <ul className="tool__facts mono">
+              <li>Feeder energy balance</li>
+              <li>Meter risk scores</li>
+              <li>GPS inspection dockets</li>
+            </ul>
+          </motion.li>
         </motion.ul>
       </div>
 
@@ -139,6 +149,7 @@ export function Tools() {
         .tool__brand img { width: 3.6em; height: 3.6em; }
         .tool__kind { font-size: .75em; color: var(--sign); text-transform: uppercase; letter-spacing: .08em; margin-top: .25em; }
         .tool--eye .tool__kind { color: var(--eyeline); }
+        .tool--volt .tool__kind { color: #b37400; }
         .tool__desc { font-size: 1em; line-height: 1.55; }
         .tool__facts { list-style: none; display: flex; flex-wrap: wrap; gap: .5em; font-size: .72em; margin-top: auto; }
         .tool__facts li { padding: .45em .8em; border-radius: 99px; background: var(--bone-2); color: var(--ink-2); }
