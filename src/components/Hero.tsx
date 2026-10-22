@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { motion, stagger, useAnimationFrame, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform, useVelocity } from "motion/react";
 import { ButtonLink, Roll, Wordmark, GITHUB, PRODUCTS } from "./ui";
 
@@ -91,12 +91,15 @@ export function Hero() {
           variants={{ show: { transition: { delayChildren: stagger(0.06, { startDelay: 0.3 }) } } }}
           aria-label="Software for the small jobs of every day."
         >
+          {/* A real space after each word (not padding) so crawlers read the headline as words. */}
           {words.map((w) => (
-            <span key={w} className="hero__word" aria-hidden>
-              <motion.span style={{ display: "inline-block" }} variants={{ hidden: reduce ? { opacity: 0 } : { y: "110%" }, show: { y: "0%", opacity: 1 } }} transition={{ duration: 1, ease: EASE }}>
-                {w}
-              </motion.span>
-            </span>
+            <Fragment key={w}>
+              <span className="hero__word" aria-hidden>
+                <motion.span style={{ display: "inline-block" }} variants={{ hidden: reduce ? { opacity: 0 } : { y: "110%" }, show: { y: "0%", opacity: 1 } }} transition={{ duration: 1, ease: EASE }}>
+                  {w}
+                </motion.span>
+              </span>{" "}
+            </Fragment>
           ))}
           <span className="hero__word hero__mark" aria-hidden>
             <motion.span style={{ display: "inline-block" }} variants={{ hidden: reduce ? { opacity: 0 } : { y: "110%" }, show: { y: "0%", opacity: 1 } }} transition={{ duration: 1, ease: EASE }}>
@@ -124,7 +127,7 @@ export function Hero() {
         .hero { position: relative; min-height: 100svh; padding-top: 10em; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; }
         .hero__in { display: grid; gap: 2em; justify-items: start; }
         .hero__title { max-width: 9.5em; }
-        .hero__word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .06em; margin-bottom: -.06em; padding-right: .2em; }
+        .hero__word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .06em; margin-bottom: -.06em; }
         .hero__mark { position: relative; overflow: visible; }
         .hero__mark > span:first-child { position: relative; z-index: 1; }
         .hero__swipe { position: absolute; left: -.06em; right: .14em; bottom: .04em; height: .42em; background: var(--tape); transform-origin: 0 50%; z-index: 0; border-radius: .06em; }
