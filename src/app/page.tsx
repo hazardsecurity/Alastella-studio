@@ -1,5 +1,5 @@
 import { Hero, Nav } from "@/components/Hero";
-import { Closing, Principles, Tools } from "@/components/Sections";
+import { Closing, Community, Principles, Tools } from "@/components/Sections";
 
 // Structured data: the studio, its website and its live products.
 const jsonLd = {
@@ -43,6 +43,16 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "5000", priceCurrency: "NGN" },
       publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
     },
+    {
+      "@type": "SoftwareApplication",
+      name: "meetadev",
+      url: "https://www.meetadev.xyz/",
+      description: "Free networking app for DevFest and GDG events, made by Hazardsecurity as a community project.",
+      applicationCategory: "SocialNetworkingApplication",
+      operatingSystem: "Web browser",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
+      publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
+    },
   ],
 };
 
@@ -54,6 +64,7 @@ export default function Home() {
       <main>
         <Hero />
         <Tools />
+        <Community />
         <Principles />
       </main>
       <Closing />

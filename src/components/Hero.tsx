@@ -22,6 +22,7 @@ export function Nav() {
         <Link href="/" aria-label="Hazardsecurity home"><Wordmark /></Link>
         <nav className="nav__links" aria-label="Main">
           <a href="#tools" className="roll-host"><Roll>Tools</Roll></a>
+          <a href="#community" className="roll-host"><Roll>Community</Roll></a>
           <a href="#principles" className="roll-host"><Roll>How we build</Roll></a>
           <a href={GITHUB} className="roll-host" target="_blank" rel="noreferrer"><Roll>GitHub</Roll></a>
         </nav>

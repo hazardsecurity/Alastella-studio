@@ -167,6 +167,77 @@ export function Tools() {
   );
 }
 
+/* ---------------- Community projects ---------------- */
+export function Community() {
+  return (
+    <section id="community" className="section community">
+      <div className="wrap">
+        <div className="tools__head">
+          <Reveal><span className="eyebrow">Community projects</span></Reveal>
+          <Reveal delay={0.05}><h2 className="h2">Built for the people<br />who taught us.</h2></Reveal>
+          <Reveal delay={0.1}><p className="lead">Free tools we make for developer communities. No subscription, no paywall, just a job done properly for the meetups and conferences that grow our industry.</p></Reveal>
+        </div>
+
+        <Reveal>
+          <article className="project">
+            <div className="project__copy">
+              <div className="tool__top">
+                <span className="mono tool__no">C1</span>
+                <span className="tool__status mono"><i />Live · Free</span>
+              </div>
+              <div className="tool__brand">
+                <Image src="/meetadev-mark.svg" alt="" width={72} height={72} unoptimized />
+                <div>
+                  <h3 className="h3">meetadev</h3>
+                  <p className="mono tool__kind project__kind">Networking for DevFest &amp; GDG events</p>
+                </div>
+              </div>
+              <p className="body tool__desc">
+                Meet the people you came to meet. Attendees make a badge with their role, level and what they&apos;re there for, whether mentoring, learning, hiring or finding a co-founder, and see who else is at the event. Contact details only appear once both people accept, and connections can chat right in the app.
+              </p>
+              <ul className="tool__facts mono">
+                <li>Mutual-accept contacts</li>
+                <li>Chat &amp; leaderboard</li>
+                <li>2,000+ GDG communities</li>
+                <li>Free</li>
+              </ul>
+              <ButtonLink href={PRODUCTS.meetadev} variant="ink" external>Open meetadev</ButtonLink>
+            </div>
+            <div className="project__badge" aria-hidden>
+              <span className="project__ribbon"><i /><i /><i /><i /></span>
+              <span className="mono project__hello">Hello, I&apos;m</span>
+              <strong className="project__name">A developer</strong>
+              <span className="project__chips"><b>Mentor</b><b>Android</b><b>Hiring</b></span>
+            </div>
+          </article>
+        </Reveal>
+      </div>
+
+      <style>{`
+        .community { padding-top: 0; scroll-margin-top: 7em; }
+        .project { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2em; align-items: center; padding: 2em; border-radius: 1.5em; background: #faf9f5;
+          box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 8%, transparent); }
+        .project__copy { display: flex; flex-direction: column; gap: 1.4em; }
+        .project__copy .btn { align-self: flex-start; }
+        .project__kind { color: #1a73e8; }
+        .project__badge { position: relative; justify-self: center; width: min(100%, 17em); aspect-ratio: 3 / 4; display: flex; flex-direction: column; justify-content: center; gap: .6em;
+          padding: 2.2em 1.6em 1.6em; border-radius: 1.2em; background: #fff; box-shadow: 0 30px 60px -35px rgba(15,15,14,.45), inset 0 0 0 1px color-mix(in srgb, var(--ink) 8%, transparent);
+          transform: rotate(-3deg); transition: transform .6s var(--ease); }
+        @media (hover: hover) and (pointer: fine) { .project:hover .project__badge { transform: rotate(0deg) translateY(-6px); } }
+        .project__ribbon { position: absolute; inset: 0 0 auto; height: .7em; display: grid; grid-template-columns: repeat(4, 1fr); border-radius: 1.2em 1.2em 0 0; overflow: hidden; }
+        .project__ribbon i:nth-child(1) { background: #4285f4; } .project__ribbon i:nth-child(2) { background: #ea4335; }
+        .project__ribbon i:nth-child(3) { background: #fbbc05; } .project__ribbon i:nth-child(4) { background: #34a853; }
+        .project__hello { font-size: .72em; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+        .project__name { font-size: 1.6em; line-height: 1.1; }
+        .project__chips { display: flex; flex-wrap: wrap; gap: .4em; margin-top: .6em; }
+        .project__chips b { font-weight: 600; font-size: .72em; padding: .4em .75em; border-radius: 99px; background: var(--bone-2); color: var(--ink-2); }
+        @media (prefers-reduced-motion: reduce) { .project__badge { transition: none; } }
+        @media (max-width: 767px) { .project { grid-template-columns: 1fr; padding: 1.5em; } .project__badge { width: min(100%, 14em); } }
+      `}</style>
+    </section>
+  );
+}
+
 /* ---------------- Principles (dark) ---------------- */
 const principles = [
   { k: "01", t: "One job, done properly", b: "Each tool solves a single everyday task from start to finish. No dashboards to learn, no settings to tune." },
@@ -229,10 +300,12 @@ export function Closing() {
           <Wordmark />
           <nav className="foot__links" aria-label="Footer">
             <a href="#tools">Tools</a>
+            <a href="#community">Community</a>
             <a href="#principles">How we build</a>
             <a href={PRODUCTS.hazardsign} target="_blank" rel="noreferrer">HazardSign AI</a>
             <a href={PRODUCTS.eyeline} target="_blank" rel="noreferrer">Eyeline</a>
             <a href={PRODUCTS.eyelineFloat} target="_blank" rel="noreferrer">Eyeline Float</a>
+            <a href={PRODUCTS.meetadev} target="_blank" rel="noreferrer">meetadev</a>
             <a href={GITHUB} target="_blank" rel="noreferrer">GitHub</a>
           </nav>
           <span className="mono foot__c">© 2026 Hazardsecurity</span>
