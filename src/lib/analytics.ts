@@ -1,10 +1,10 @@
 import type { PostHog } from "posthog-js";
 
-// Product analytics (PostHog). Off unless NEXT_PUBLIC_POSTHOG_KEY is set. Events go through /ingest on this site
+// Product analytics (PostHog). Off unless NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN is set (NEXT_PUBLIC_POSTHOG_HOST picks the region). Events go through /ingest on this site
 // (see next.config.ts), so ad blockers don't drop them and the browser never calls PostHog directly.
 // Recordings mask anything typed. Visitors can turn it off on /privacy, and Do Not Track is respected.
-const KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY ?? "";
-const REGION = process.env.NEXT_PUBLIC_POSTHOG_REGION === "eu" ? "eu" : "us";
+const KEY = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN || process.env.NEXT_PUBLIC_POSTHOG_KEY || "";
+const REGION = process.env.NEXT_PUBLIC_POSTHOG_REGION === "eu" || /\beu\./.test(process.env.NEXT_PUBLIC_POSTHOG_HOST ?? "") ? "eu" : "us";
 export const POSTHOG_HOST = `https://${REGION}.i.posthog.com`;
 export const POSTHOG_ASSETS = `https://${REGION}-assets.i.posthog.com`;
 const OPT_OUT_KEY = "hs-no-analytics";
