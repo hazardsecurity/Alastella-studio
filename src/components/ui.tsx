@@ -58,5 +58,6 @@ export const PRODUCTS = {
   eyeline: "https://eyeline.hazardsecurity.xyz",
   eyelineFloat: "https://eyeline.hazardsecurity.xyz/download",
   meetadev: "https://www.meetadev.xyz",
+  youWrapped: "https://wrapped.hazardsecurity.xyz",
 };
 export const GITHUB = "https://github.com/hazardsecurity";

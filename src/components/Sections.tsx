@@ -211,9 +211,55 @@ export function Community() {
             </div>
           </article>
         </Reveal>
+
+        <Reveal>
+          <article className="project">
+            <div className="project__copy">
+              <div className="tool__top">
+                <span className="mono tool__no">C2</span>
+                <span className="tool__status mono"><i />Live · Free</span>
+              </div>
+              <div className="tool__brand">
+                <Image src="/you-wrapped-mark.svg" alt="" width={72} height={72} unoptimized />
+                <div>
+                  <h3 className="h3">You Wrapped</h3>
+                  <p className="mono tool__kind project__kind project__kind--wrap">Your year on GitHub, LinkedIn &amp; X</p>
+                </div>
+              </div>
+              <p className="body tool__desc">
+                Your year, wrapped. Add your GitHub username and the archives LinkedIn and X email you, and watch your year play back as a story: what you built, what you posted and the people you met. Then save a card to share. Archives are opened in your browser and never uploaded.
+              </p>
+              <ul className="tool__facts mono">
+                <li>GitHub, LinkedIn &amp; X</li>
+                <li>Story you can share</li>
+                <li>Archives stay on your device</li>
+                <li>Free</li>
+              </ul>
+              <ButtonLink href={PRODUCTS.youWrapped} variant="ink" external>Open You Wrapped</ButtonLink>
+            </div>
+            <div className="project__wrap" aria-hidden>
+              <span className="mono project__wrap-top"><span>You Wrapped</span><span>Sample</span></span>
+              <strong className="project__wrap-name">The All&#8209;Rounder</strong>
+              <span className="project__wrap-stat"><b>1,284</b>GitHub contributions</span>
+              <span className="project__wrap-stat"><b>248</b>new LinkedIn connections</span>
+            </div>
+          </article>
+        </Reveal>
       </div>
 
       <style>{`
+        .community .project + .project { margin-top: 1.2em; }
+        .project__kind--wrap { color: #e3155b; }
+        .project__wrap { justify-self: center; width: min(100%, 15em); aspect-ratio: 9 / 16; display: flex; flex-direction: column; gap: .9em; padding: 1.4em; border-radius: 1.2em;
+          background: #e3155b; color: #fff; box-shadow: 0 30px 60px -35px rgba(15,15,14,.45); transform: rotate(3deg); transition: transform .6s var(--ease); }
+        @media (hover: hover) and (pointer: fine) { .project:hover .project__wrap { transform: rotate(0deg) translateY(-6px); } }
+        .project__wrap-top { display: flex; justify-content: space-between; font-size: .68em; text-transform: uppercase; letter-spacing: .1em; opacity: .8; }
+        .project__wrap-name { font-size: 1.7em; line-height: 1; margin-top: auto; }
+        .project__wrap-name + .project__wrap-stat { margin-top: .4em; }
+        .project__wrap-stat { display: grid; font-size: .78em; opacity: .9; }
+        .project__wrap-stat b { font-size: 2.3em; line-height: 1; letter-spacing: -.03em; opacity: 1; }
+        @media (prefers-reduced-motion: reduce) { .project__wrap { transition: none; } }
+        @media (max-width: 767px) { .project__wrap { width: min(100%, 12em); } }
         .community { padding-top: 0; scroll-margin-top: 7em; }
         .project { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2em; align-items: center; padding: 2em; border-radius: 1.5em; background: #faf9f5;
           box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 8%, transparent); }

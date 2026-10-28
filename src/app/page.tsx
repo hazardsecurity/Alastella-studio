@@ -54,6 +54,16 @@ const jsonLd = {
       offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
       publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
     },
+    {
+      "@type": "SoftwareApplication",
+      name: "You Wrapped",
+      url: "https://wrapped.hazardsecurity.xyz/",
+      description: "Free yearly wrap of your GitHub, LinkedIn and X activity, made by Hazardsecurity as a community project.",
+      applicationCategory: "SocialNetworkingApplication",
+      operatingSystem: "Web browser",
+      offers: { "@type": "Offer", price: "0", priceCurrency: "NGN" },
+      publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
+    },
   ],
 };
 
