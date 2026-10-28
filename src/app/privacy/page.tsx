@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
 };
 
-// This page covers www.hazardsecurity.xyz only. Each product (HazardSign AI, Eyeline, meetadev) has its own policy.
+// This page covers www.hazardsecurity.xyz only. Each product (HazardSign AI, Eyeline Studio, Eyeline Float, meetadev) has its own policy.
 export default function Privacy() {
   return (
     <main className="section privacy">

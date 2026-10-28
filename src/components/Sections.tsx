@@ -64,8 +64,8 @@ export function Tools() {
             <div className="tool__brand">
               <Image src="/eyeline-mark.svg" alt="" width={72} height={72} unoptimized />
               <div>
-                <h3 className="h3">Eyeline</h3>
-                <p className="mono tool__kind">Teleprompter</p>
+                <h3 className="h3">Eyeline Studio</h3>
+                <p className="mono tool__kind">Video recording studio</p>
               </div>
             </div>
             <p className="body tool__desc">
@@ -76,7 +76,7 @@ export function Tools() {
               <li>Records in browser</li>
               <li>₦3,000 / month</li>
             </ul>
-            <ButtonLink href={PRODUCTS.eyeline} variant="ink" external>Open Eyeline</ButtonLink>
+            <ButtonLink href={PRODUCTS.eyeline} variant="ink" external>Open Eyeline Studio</ButtonLink>
           </motion.li>
 
           {/* 03 — live */}
@@ -89,11 +89,11 @@ export function Tools() {
               <Image src="/eyeline-float-mark.svg" alt="" width={72} height={72} unoptimized />
               <div>
                 <h3 className="h3">Eyeline Float</h3>
-                <p className="mono tool__kind">Desktop teleprompter</p>
+                <p className="mono tool__kind">AI co-pilot for live interviews</p>
               </div>
             </div>
             <p className="body tool__desc">
-              Read your script on a video call without anyone seeing it. A thin strip sits under your webcam on Mac or Windows, scrolls at your pace, and stays out of screen sharing on Zoom, Meet and Teams.
+              An AI co-pilot for live interviews and calls. It hears the question you are asked and puts the answer on a thin strip under your webcam, on Mac or Windows, hidden from screen sharing on Zoom, Meet and Teams.
             </p>
             <ul className="tool__facts mono">
               <li>Mac and Windows</li>
@@ -241,7 +241,7 @@ export function Community() {
 /* ---------------- Principles (dark) ---------------- */
 const principles = [
   { k: "01", t: "One job, done properly", b: "Each tool solves a single everyday task from start to finish. No dashboards to learn, no settings to tune." },
-  { k: "02", t: "Private by default", b: "We keep as little of your data as the job allows. HazardSign signs your documents and Eyeline records your takes without either ever leaving your device." },
+  { k: "02", t: "Private by default", b: "We keep as little of your data as the job allows. HazardSign signs your documents and Eyeline Studio records your takes without either ever leaving your device." },
   { k: "03", t: "Fair, local pricing", b: "Simple monthly prices in naira, paid securely by card. Cancel whenever you like." },
   { k: "04", t: "Shipped, then sharpened", b: "Tools go out when they're useful, then improve every week based on how people actually use them." },
 ];
@@ -303,7 +303,7 @@ export function Closing() {
             <a href="#community">Community</a>
             <a href="#principles">How we build</a>
             <a href={PRODUCTS.hazardsign} target="_blank" rel="noreferrer">HazardSign AI</a>
-            <a href={PRODUCTS.eyeline} target="_blank" rel="noreferrer">Eyeline</a>
+            <a href={PRODUCTS.eyeline} target="_blank" rel="noreferrer">Eyeline Studio</a>
             <a href={PRODUCTS.eyelineFloat} target="_blank" rel="noreferrer">Eyeline Float</a>
             <a href={PRODUCTS.meetadev} target="_blank" rel="noreferrer">meetadev</a>
             <a href={GITHUB} target="_blank" rel="noreferrer">GitHub</a>

@@ -27,7 +27,7 @@ const jsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      name: "Eyeline",
+      name: "Eyeline Studio",
       url: "https://eyeline.hazardsecurity.xyz/",
       applicationCategory: "MultimediaApplication",
       operatingSystem: "Web browser",
@@ -38,7 +38,8 @@ const jsonLd = {
       "@type": "SoftwareApplication",
       name: "Eyeline Float",
       url: "https://eyeline.hazardsecurity.xyz/download",
-      applicationCategory: "MultimediaApplication",
+      description: "An AI co-pilot for live interviews and calls, on a strip under your webcam that stays hidden from screen sharing.",
+      applicationCategory: "BusinessApplication",
       operatingSystem: "macOS, Windows",
       offers: { "@type": "Offer", price: "5000", priceCurrency: "NGN" },
       publisher: { "@id": "https://www.hazardsecurity.xyz/#org" },
