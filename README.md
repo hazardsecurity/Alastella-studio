@@ -1,4 +1,4 @@
-# Hazardsecurity studio
+# Alastella studio
 
 Homepage for **hazardsecurity.xyz**: an independent studio building focused software for everyday jobs. Each product lives on its own subdomain (for example `sign.hazardsecurity.xyz` for HazardSign AI).
 

@@ -19,7 +19,7 @@ export function Nav() {
   return (
     <header className={`nav ${scrolled ? "is-scrolled" : ""}`}>
       <div className="wrap nav__in">
-        <Link href="/" aria-label="Hazardsecurity home"><Wordmark /></Link>
+        <Link href="/" aria-label="Alastella home"><Wordmark /></Link>
         <nav className="nav__links" aria-label="Main">
           <a href="#tools" className="roll-host"><Roll>Tools</Roll></a>
           <a href="#community" className="roll-host"><Roll>Community</Roll></a>
@@ -111,7 +111,7 @@ export function Hero() {
           </span>
         </motion.h1>
         <motion.p className="lead" initial={reduce ? false : { opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: .9 }}>
-          Hazardsecurity builds focused tools that each do one job properly: private by default, quick to learn and fairly priced.
+          Alastella builds focused tools that each do one job properly: private by default, quick to learn and fairly priced.
         </motion.p>
         <motion.div className="hero__ctas" initial={reduce ? false : { opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: 1.05 }}>
           <ButtonLink href="#tools" variant="tape">Explore the tools</ButtonLink>
@@ -121,7 +121,7 @@ export function Hero() {
 
       <div className="tapes">
         <Tape label="SOFTWARE FOR DAILY NEEDS" angle={-4} direction={-1} delay={0.5} />
-        <Tape label="HAZARDSECURITY STUDIO" angle={3} direction={1} delay={0.75} />
+        <Tape label="ALASTELLA STUDIO" angle={3} direction={1} delay={0.75} />
       </div>
 
       <style>{`

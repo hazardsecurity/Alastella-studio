@@ -355,7 +355,7 @@ export function Closing() {
             <a href={GITHUB} target="_blank" rel="noreferrer">GitHub</a>
             <a href="/privacy">Privacy</a>
           </nav>
-          <span className="mono foot__c">© 2026 Hazardsecurity</span>
+          <span className="mono foot__c">© 2026 Alastella</span>
         </footer>
       </div>
       <style>{`

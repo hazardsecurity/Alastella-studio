@@ -13,7 +13,7 @@ export function Wordmark({ onDark = false }: { onDark?: boolean }) {
         }}
       />
       <span>
-        hazardsecurity<span style={{ fontFamily: "var(--f-mono)", fontWeight: 400, fontSize: "0.68em", opacity: 0.55, letterSpacing: 0 }}>.xyz</span>
+        alastella
       </span>
     </span>
   );
@@ -60,4 +60,4 @@ export const PRODUCTS = {
   meetadev: "https://www.meetadev.xyz",
   youWrapped: "https://wrapped.hazardsecurity.xyz",
 };
-export const GITHUB = "https://github.com/hazardsecurity";
+export const GITHUB = "https://github.com/alastella";

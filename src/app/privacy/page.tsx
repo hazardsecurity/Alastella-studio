@@ -4,8 +4,8 @@ import { AnalyticsChoice } from "@/components/AnalyticsChoice";
 import { Wordmark } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Privacy: Hazardsecurity",
-  description: "What the Hazardsecurity website collects when you visit, and how to turn it off.",
+  title: "Privacy: Alastella",
+  description: "What the Alastella website collects when you visit, and how to turn it off.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -14,7 +14,7 @@ export default function Privacy() {
   return (
     <main className="section privacy">
       <div className="wrap privacy__in">
-        <Link href="/" aria-label="Hazardsecurity home"><Wordmark /></Link>
+        <Link href="/" aria-label="Alastella home"><Wordmark /></Link>
         <span className="eyebrow">Last updated 26 October 2026</span>
         <h1 className="h2">Privacy on this website</h1>
         <p className="lead">
@@ -37,7 +37,7 @@ export default function Privacy() {
         <AnalyticsChoice />
         <h2 className="privacy__h">Questions</h2>
         <p>
-          Open an issue or message us on <a href="https://github.com/hazardsecurity" target="_blank" rel="noreferrer">GitHub</a>.
+          Open an issue or message us on <a href="https://github.com/alastella" target="_blank" rel="noreferrer">GitHub</a>.
         </p>
       </div>
       <style>{`
